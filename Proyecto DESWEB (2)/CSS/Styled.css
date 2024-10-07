@@ -1,0 +1,425 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 250px;
+    }
+    header {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    
+    }
+    nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    }
+    h1 {
+    margin: 20px 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    }
+    main {
+    padding: 20px;
+    }
+    h2 {
+    margin-bottom: 20px;
+}
+form {
+margin-bottom: 20px;
+}
+input {
+display: block;
+margin: 10px 0;
+padding: 8px;
+width: 100%;
+max-width: 300px;
+}
+button {
+padding: 10px 20px;
+background-color: #28a745;
+color: white;
+border: none;
+cursor: pointer;
+}
+button:hover {
+background-color: #218838;
+}
+/* Estilos para la cuadrícula de productos */
+.product-grid {
+display: grid;
+grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+gap: 20px;
+padding: 20px;
+}
+.product-card {
+background-color: white;
+border-radius: 8px;
+padding: 15px;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.product-card img {
+max-width: 100%;
+height: auto;
+border-radius: 8px;
+}
+.product-card h3 {
+font-size: 18px;
+margin: 10px 0;
+}
+.product-card p {
+font-size: 14px;
+margin: 5px 0;
+}
+.product-card .sold-out {
+color: red;
+font-weight: bold;
+}
+#logout-link {
+color: red;
+cursor: pointer;
+}
+#welcome-message {
+margin-right: 10px;
+font-weight: bold;
+color: green;
+}
+#logo {
+    max-width: 100px;
+    max-height: 80px;
+    border: black 2px solid;
+    border-radius: 50%;
+    display: inline;
+}
+.carousel {
+    width: 800px;
+    overflow: hidden;
+    position: relative;
+    height: 800px;
+    justify-content: center;
+    padding-left: 370px;
+    padding-right: 370px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    background-color: salmon;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item:nth-child(even) {
+    background-color: lightseagreen;
+}
+#CI {
+    max-height: 800px;
+    max-width: 700px;
+    width: 600px;
+    height: 500px;
+}
+footer {
+    background-color: lightgray;
+    font-family: 'Times New Roman', Times, serif;
+    height: 250px;
+    width: 1600px;
+    justify-content: center;
+    display: inline;
+}
+header {
+    background: linear-gradient(90deg, #333, #8a8888);
+}
+#SB {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+#Cap{
+    display: flex;
+justify-content: center;
+padding-left:370px ;
+border-radius: 25px;
+
+}
+#UT {
+    background-color: lightsalmon;
+    display: flex;
+    justify-content: center;
+    border: #333 3px solid;
+}
+:root {
+    --background-color: #fefeff;
+    --text-color: #000;
+    --header-background-color: #120436;
+    --footer-background-color: #120436;
+    --card-background-color: white;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  header {
+    background-color: var(--header-background-color);
+  }
+  
+  footer {
+    background-color: var(--footer-background-color);
+  }
+  
+  .product-card {
+    background-color: var(--card-background-color);
+  }
+  body {
+    background-color: #fefeff;
+    color: #000;
+  }
+  
+  /* Modo oscuro */
+  body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  /* Modo daltónico (colores de alto contraste) */
+  body.colorblind-mode {
+    background-color: #ffffff;
+    color: #000;
+    /* Cambiar la paleta de colores a una más accesible */
+  }
+  
+  /* Algunos colores ajustados para modo daltónico */
+  body.colorblind-mode a {
+    color: #005aee; /* Un azul accesible */
+  }
+  
+  body.colorblind-mode header,
+  body.colorblind-mode footer {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  .hamburger {
+    display: none;
+    background-color: #120436;
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+main {
+    flex: 1;
+    padding: 20px;
+}
+    
+form {
+    margin-bottom: 20px;
+}
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #5b54c3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #b1d7b9;
+}
+#logout-link {
+    color: rgb(77, 183, 61);
+    cursor: pointer;
+}
+#welcome-message {
+    margin-right: 10px;
+    font-weight: bold;
+    color: green;
+}
+.compra {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+.compra h3 {
+    margin: 0 0 10px;
+}
+.compra ul {
+    list-style-type: none;
+    padding: 0;
+}
+.compra ul li {
+    padding: 10px 0;
+}
+.compra p {
+    font-weight: bold;
+}
+footer {
+    background-color: #120436;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    }
+    .footerdiv{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: grey;
+}
+.footerdiv1{
+    padding-top: 20px;
+}
+.footerdiv2{
+    color: white;
+    text-align: left;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(234, 229, 229);
+}
+
+/* Para pantallas de hasta 768px (tablets y móviles en modo horizontal) */
+@media screen and (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat (2, 1fr); /* Cambia a 2 columnas en pantallas más pequeñas */
+        }
+    header, footer {
+        text-align: center; /* Centra el contenido del header y footer */
+    }
+    .footerdiv{
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .footerdiv1{
+        padding-top: 20px;
+    }
+    .footerdiv2{
+        color: white;
+        text-align: left;
+    }
+    footer a{
+        text-decoration: none;
+        color: rgb(234, 229, 229);
+    }
+    /* Para pantallas de hasta 768px (tablets y móviles en modo horizontal) */
+    @media screen and (max-width: 768px) {
+        .product-grid {
+            grid-template-columns: repeat (2, 1fr); /* Cambia a 2 columnas en pantallas más pequeñas */
+        }
+        header, footer {
+            text-align: center; 
+            nav {
+                display: none; /* Oculta el menú de navegación por defecto */
+                flex-direction: column; /* Cambia la dirección de los elementos del menú */
+                background-color: #120436;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                padding: 10px 0;
+            }
+            nav a {
+                padding: 15px;
+                text-align: center;
+                border-bottom: 1px solid #ddd;
+            }
+                /* Muestra el botón de hamburguesa */
+            .hamburger {
+                display: block;
+            }
+                        /* Muestra el menú cuando está activo */
+            nav.active {
+                display: flex;
+            }
+            .hamburger.active {
+                content: "\2715"; /* Cambia a una "X" cuando el menú esté activo */
+            }
+            .footerdiv {
+                flex-direction: column;
+                align-items: center;
+            }
+            .footerdiv1, .footerdiv2 {
+                    text-align: center;
+            }
+            .footerdiv2 ul {
+                padding-left: 0;
+            }
+            .footerdiv2 ul li {
+                list-style-type: none;
+            }
+        }
+    }
+}
+    /* Para pantallas de hasta 480px (móviles en modo vertical) */
+@media screen and (max-width: 480px) {
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax (200px, 1fr)); /* Se ajusta automáticamente */
+        gap: 10px;
+    }
+    button, input {
+        width: 100%; /* Asegura que botones e inputs ocupen todo el ancho disponible */
+    }
+    .hamburger.active {
+        content: "\2715"; /* Cambia a una "X" cuando el menú esté activo */
+    }
+} 
+.offer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.offer-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: #000 solid 3px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    border-radius: 10px;
+}
+.CL {
+    gap: 10px; /* Space between images */
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    transform: scale(1.05);
+    width: 520px;
+    height: 400px;
+}

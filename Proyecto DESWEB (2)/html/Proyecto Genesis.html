@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"> <!--remember our proyect is le videogames--> <!--btw well prolly have to change this but we'll be fine we always are ;3-->
+<head> <!--la idea es una pagina de ofertas especificas para miembros-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Supermercado - Productos</title>
+<link rel="stylesheet" href="../CSS/Styled.css">
+<link rel="stylesheet" href="../CSS/acerca.css">
+</head>
+<body>
+    <header>
+        <h1>Claptrap's INN</h1>
+        <a href="../html/Proyecto Genesis.html"><img src="../img/a140baf963ff83a49b15f9e795b4f847.jpg" alt="" id="logo"></a>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <nav id="navbar">
+            <button id="theme-toggle" class="theme-toggle">Dark Mode</button>
+            <button id="toggle-mode-btn">Change Mode</button>
+                <a href="Proyecto Genesis.html">Inicio</a>
+                <a href="login.html" id="login-link">Iniciar Sesión</a>
+                <a href="register.html" id="register-link">Registrar</a>
+                <a href="Contactos.html">Contactos</a>
+                <a href="Ubicacion.html">Ubicacion</a>
+                <span id="welcome-message" style="display:none;"></span>
+                <a href="#" id="logout-link" style="display:none;">Cerrar Sesión</a>
+                <button id="cart-BTN">carrito(0)</button>
+        </nav>
+    </header>
+<pre><p id="UT">
+    Who We Are
+
+    At Claptraps's Inn, we’re passionate about all things tech. As a leading provider of cutting-edge computer and gaming equipment,
+     we strive to enhance your digital experience with top-quality products and expert knowledge.
+    Founded by a team of enthusiasts, we understand the needs of gamers and professionals alike.
+     Whether you're building the ultimate gaming rig or upgrading your office setup, our carefully curated selection is designed to empower you.
+    Our commitment to customer satisfaction drives us to offer exceptional service and support.
+     At Claptraps's Inn, we believe in creating a community where innovation thrives and every gamer can find their perfect gear.
+     Join us on this exciting journey and elevate your tech experience!
+</p></pre>
+<div class="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active"> <img src="../img/halo-reach.jpg" id="CI" alt=""></div>
+        <div class="carousel-item"><img src="../img/descarga (1).jpg" id="CI" alt=""></div>
+        <div class="carousel-item"><img src="../img/descarga.jpg" id="CI" alt=""></div>
+        <div class="carousel-item"><img src="../img/the-stellaris-wallpapers-album-has-been-updated-v0-xm5sg6g1xr0d1.webp" id="CI" alt=""></div>
+    </div>
+</div>
+<main>
+    <h1>Productos</h1>
+<section id="product-list" class="product-grid">
+<!-- Aquí se mostrarán las tarjetas de productos -->
+</section>
+<div id="cart" style="display: none;">
+    <h2>carrito de Compras</h2>
+    <ul id="cart-items"></ul>
+    <p>Subtotal: $<span  id="cart-subtotal">0.00</span></p>
+    <p>iva (13$): $<span id="cart-tax">0.00</span></p>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+    <button id="checkout-BTN">Finalizar Compra</button>
+</div>
+</main>
+
+<script src="../Js/BG.js"></script>
+<footer>
+        <span>SuperAserri 2024 - todos los derechos reservados</span>
+        <div class="footerdiv">
+            <div class="footerdiv1">
+                <img src="../img/a140baf963ff83a49b15f9e795b4f847.jpg" alt="" style="border-radius: 25px; width: 200px; height: 150px;">
+            </div>
+            <div class="footerdiv2">
+                <h3 class="headline footer">Servicio al CLiente</h3>
+                <ul class="footer-links">
+                    <li><a href="#"></a>Metodos de Pago</li>
+                    <li><a href="#">Entregas y devoluciones</a></li>
+                    <li><a href="#"></a>Politicas de Cookies</li>
+                    <li><a href="#"></a>Politicas de Privacidad</li>
+                    <li><a href="#"></a>Terminos y Condiciones</li>
+                    <li><a href="#"></a>Quejas</li>
+                </ul>
+            </div>
+            <div class="footerdiv2">
+                <h3 class="headline footer">Contactenos</h3>
+                <ul>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:2230-5200"  class="ng-binding">2230-5222</a></li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a class="ng-binding" href="mailto:superaserri@superaserri.com">SuperAserri@superaserri.com</a>
+                    </li>
+                    <li><a href="../html/Contactos.html"><i class="fa fa-comment"></i>Contactenos</a></li>
+                    <li><a href="../html/preguntas.html"><i class="fa fa-question-circle" aria-hidden="true"></i>Preguntas Frecuentes</a></li>
+                    <li><a href="../html/Ubicacion.html"><i class="fa fa-store" aria-hidden="true"></i>Supermercado</a></li>
+                    <li><a href="../html/acercade.html"><i class="fa fa-building" aria-hidden="true"></i>Quienes Somos</a></li>
+                </ul>
+            </div>
+        </div>
+</footer>
+<script src="../Js/BG.js"></script>
+<script src="../Js/Carrito.js"></script>
+<script src="../Js/compras.js"></script>
+</body>
+</html>
