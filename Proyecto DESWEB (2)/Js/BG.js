@@ -10,10 +10,10 @@ function addProduct(event) {
     alert('Por favor, ingrese todos los campos');
     return;
     }
-     // Convertir la imagen en base64 para guardarla
-    const reader = new FileReader();
-    reader.onload = function (event) {
-    const imageDataUrl = event.target.result;
+         // Convertir la imagen en base64 para guardarla
+         const reader = new FileReader();
+         reader.onload = function (event) {
+         const imageDataUrl = event.target.result;
  // Recuperar los productos de localStorage (o un arreglo vacío si no hay productos)
     let products = JSON.parse(localStorage.getItem('products')) || [];
     // Crear el nuevo producto
@@ -160,8 +160,7 @@ function updateNav() {
     const welcomeMessage = document.getElementById('welcome-message');
     if (loggedInUser) {
     // Si hay un usuario logueado
-    loginLink.style.display = 'none'; // Ocultar el botón de login
-    registerLink.style.display = 'none'; // Ocultar el botón de registro
+  
     welcomeMessage.style.display = 'inline'; // Mostrar mensaje de bienvenida
     welcomeMessage.textContent = `Bienvenido, ${loggedInUser}`; // Mostrar nombre del usuario
     logoutLink.style.display = 'inline'; // Mostrar botón de cerrar sesión

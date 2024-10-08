@@ -79,12 +79,12 @@ function addProduct(event) {
 
         let product = JSON.parse(localStorage.getItem('products')) || [];
 
-        if(products.length === 0) {
+        if(product.length === 0) {
             productList.innerHTML = '<p>No hay productos disponibles.</p>';
             return;        
         }
 
-        products.forEach((product, index) => {
+        product.forEach((product, index) => {
             const productDiv = document.createElement('div');
             productDiv.classList.add('product-item');
         
